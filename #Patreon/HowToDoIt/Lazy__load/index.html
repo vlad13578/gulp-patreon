@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lazy Load</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<div class="page__container">
+					<section class="page__section page__section_1">
+						<h1 class="page__title">Я заголовок</h1>
+						<div class="page__text">
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis assumenda quibusdam quis obcaecati, provident totam molestiae quod iste eligendi voluptas eaque quasi nobis delectus voluptates quaerat veniam quam eius.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint vero quas error, aspernatur repellendus tempore voluptatem perspiciatis ut voluptas corrupti voluptates necessitatibus autem dolor quos, temporibus quae illum adipisci.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veritatis est illum sequi deleniti aspernatur optio incidunt dolore libero, quasi ipsa voluptatibus quod ratione vero, fugiat voluptate. Dolores, maiores exercitationem.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis assumenda quibusdam quis obcaecati, provident totam molestiae quod iste eligendi voluptas eaque quasi nobis delectus voluptates quaerat veniam quam eius.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint vero quas error, aspernatur repellendus tempore voluptatem perspiciatis ut voluptas corrupti voluptates necessitatibus autem dolor quos, temporibus quae illum adipisci.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veritatis est illum sequi deleniti aspernatur optio incidunt dolore libero, quasi ipsa voluptatibus quod ratione vero, fugiat voluptate. Dolores, maiores exercitationem.
+							</p>
+						</div>
+					</section>
+					<section class="page__section page__section_2">
+						<h2 class="page__sub-title">Я подзаголовок</h2>
+						<div class="page__images">
+							<div class="page__image">
+								<img data-src="img/01.jpg" src="img/1x1.png" alt="Картинка">
+							</div>
+							<div class="page__image">
+								<img data-src="img/02.jpg" src="img/1x1.png" alt="Картинка">
+							</div>
+							<div class="page__image">
+								<picture>
+									<source data-srcset="img/03.webp" srcset="img/1x1.png" type="image/webp">
+									<img data-src="img/03.jpg" src="img/1x1.png" alt="Картинка">
+								</picture>
+							</div>
+							<div class="page__image">
+								<img data-src="img/04.jpg" src="img/1x1.png" alt="Картинка">
+							</div>
+							<div class="page__image">
+								<img data-src="img/05.jpg" src="img/1x1.png" alt="Картинка">
+							</div>
+							<div class="page__image">
+								<img data-src="img/06.jpg" src="img/1x1.png" alt="Картинка">
+							</div>
+						</div>
+					</section>
+					<section class="page__section page__section_3">
+						<h2 class="page__sub-title">Я подзаголовок</h2>
+						<div class="page__map _load-map" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21100.22365418332!2d22.308059938891592!3d48.618878306174004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473919ba0923b11f%3A0x88400f5d52df9321!2z0KPQttCz0L7RgNC-0LTRgdC60LjQuSDQt9Cw0LzQvtC6LCDQl9Cw0LrQsNGA0L_QsNGC0YHQutC40Lkg0LrRgNCw0LXQstC10LTRh9C10YHQutC40Lkg0LzRg9C30LXQuQ!5e0!3m2!1sru!2sua!4v1616828514253!5m2!1sru!2sua">
+
+						</div>
+					</section>
+					<section class="page__section page__section_1">
+						<h2 class="page__title">Я подзаголовок</h2>
+						<div class="page__text _load-more">
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis assumenda quibusdam quis obcaecati, provident totam molestiae quod iste eligendi voluptas eaque quasi nobis delectus voluptates quaerat veniam quam eius.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint vero quas error, aspernatur repellendus tempore voluptatem perspiciatis ut voluptas corrupti voluptates necessitatibus autem dolor quos, temporibus quae illum adipisci.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veritatis est illum sequi deleniti aspernatur optio incidunt dolore libero, quasi ipsa voluptatibus quod ratione vero, fugiat voluptate. Dolores, maiores exercitationem.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis assumenda quibusdam quis obcaecati, provident totam molestiae quod iste eligendi voluptas eaque quasi nobis delectus voluptates quaerat veniam quam eius.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint vero quas error, aspernatur repellendus tempore voluptatem perspiciatis ut voluptas corrupti voluptates necessitatibus autem dolor quos, temporibus quae illum adipisci.
+							</p>
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum rem quos non suscipit facilis debitis repellat dolor id. Repudiandae incidunt officia ipsa rerum omnis debitis odio. Autem, qui dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veritatis est illum sequi deleniti aspernatur optio incidunt dolore libero, quasi ipsa voluptatibus quod ratione vero, fugiat voluptate. Dolores, maiores exercitationem.
+							</p>
+						</div>
+					</section>
+				</div>
+			</main>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

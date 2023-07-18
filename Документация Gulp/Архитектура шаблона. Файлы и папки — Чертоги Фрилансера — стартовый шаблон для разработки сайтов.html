@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="alternate" type="application/rdf+xml" title="RDF mapping" href="https://template.fls.guru/feed/rdf">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://template.fls.guru/feed/rss">
+	<link rel="alternate" type="application/rss+xml" title="Comments RSS" href="https://template.fls.guru/comments/feed">
+	<link rel="pingback" href="https://template.fls.guru/xmlrpc.php" />
+		<title>Архитектура шаблона. Файлы и папки &#8212; Чертоги Фрилансера &#8212; стартовый шаблон для разработки сайтов</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Чертоги Фрилансера - стартовый шаблон для разработки сайтов &raquo; Лента комментариев к &laquo;Архитектура шаблона. Файлы и папки&raquo;" href="https://template.fls.guru/template-docs/arhitektura-shablona-fajly-i-papki.html/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/template.fls.guru\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.3"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://template.fls.guru/wp-includes/css/dist/block-library/style.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='patreon-wordpress-css-css'  href='https://template.fls.guru/wp-content/plugins/patreon-connect/assets/css/app.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css'  href='https://template.fls.guru/wp-content/themes/fls/css/style.min.css?ver=5.8.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://template.fls.guru/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://template.fls.guru/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://template.fls.guru/wp-json/" /><link rel="alternate" type="application/json" href="https://template.fls.guru/wp-json/wp/v2/posts/14" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://template.fls.guru/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://template.fls.guru/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+<link rel="canonical" href="https://template.fls.guru/template-docs/arhitektura-shablona-fajly-i-papki.html" />
+<link rel='shortlink' href='https://template.fls.guru/?p=14' />
+<link rel="alternate" type="application/json+oembed" href="https://template.fls.guru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftemplate.fls.guru%2Ftemplate-docs%2Farhitektura-shablona-fajly-i-papki.html" />
+<link rel="alternate" type="text/xml+oembed" href="https://template.fls.guru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftemplate.fls.guru%2Ftemplate-docs%2Farhitektura-shablona-fajly-i-papki.html&#038;format=xml" />
+<style>@font-face {
+			font-family: 'Libre Franklin Extra Bold';
+			src: url('https://template.fls.guru/wp-content/plugins/patreon-connect/assets/fonts/librefranklin-extrabold-webfont.woff2') format('woff2'),
+				 url('https://template.fls.guru/wp-content/plugins/patreon-connect/assets/fonts/librefranklin-extrabold-webfont.woff') format('woff');
+			font-weight: bold;
+			}</style><link rel="icon" href="https://template.fls.guru/wp-content/uploads/2022/01/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://template.fls.guru/wp-content/uploads/2022/01/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://template.fls.guru/wp-content/uploads/2022/01/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://template.fls.guru/wp-content/uploads/2022/01/cropped-favicon-270x270.png" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2TXS9PESR7"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-2TXS9PESR7');
+	</script>
+</head>
+<body class="post-template-default single single-post postid-14 single-format-standard logged-in">
+<div class="wrapper">
+	<header class="header">
+		<div class="header__container">
+			<nav class="header__menu menu">	
+				<div class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="/template-docs" class="menu__link">Документация</a>
+						</li>
+						<li class="menu__item">
+							<a href="/updates" class="menu__link">Обновления</a>
+						</li>
+					</ul>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a target="_blank" href="https://www.youtube.com/c/freelancerlifestyle" class="menu__link">YouTube</a>
+						</li>
+						<li class="menu__item">
+							<a target="_blank" href="https://edu.fls.guru/" class="menu__link">Курсы</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+<section class="article">
+	<div class="article__container">
+		<div class="article__search search">
+				<div id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="https://template.fls.guru/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label for="wp-block-search__input-1" class="wp-block-search__label">Поиск</label><div class="wp-block-search__inside-wrapper"><input type="search" id="wp-block-search__input-1" class="wp-block-search__input" name="s" value="" placeholder=""  required /><button type="submit" class="wp-block-search__button ">Поиск</button></div></form></div>
+<div id="block-3" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+</div>
+<div id="block-4" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+</div>
+<div id="block-5" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+</div>
+<div id="block-6" class="widget widget_block">
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+</div>
+		</div>
+					<article class="article__item" id="post-14" > 				<h1 class="article__title title">Архитектура шаблона. Файлы и папки</h1>
+				<div class="article__info info">
+					<p class="info__category">Категории: <a href="https://template.fls.guru/category/template-docs" rel="category tag">Документация «Чертоги Фрилансера» v3.0.0</a></p>
+									</div>
+				<div class="article__body body-article">
+					
+<p>В этой главе поговорим об архитектуре, иерархии папок и файлов, <a href="https://www.patreon.com/posts/startovyi-v3-59380989" target="_blank" rel="noreferrer noopener">стартового шаблона «Чертоги Фрилансера» v3.0.0</a> (далее ЧФ)</p>
+
+
+
+<h2>Разархивировав скачанный шаблон, в корне вы обнаружите следующие файлы и папки:</h2>
+
+
+
+<ol><li>Файл <strong>package.json</strong> &#8212; файл содержащий команды запуска сборщиков, информацию об установленных плагинах и их версиях (можно редактировать при необходимости). А также прочую информацию о об авторе и версии шаблона. </li><li>Файл <strong>gulpfile.js</strong> &#8212; главный файл сборщика GULP. Содержит подключения различных задач и сценарии их выполнения (можно редактировать при необходимости)</li><li>Файл <strong>snnipets.txt</strong> &#8212; файл со сниппетами которые используются при работе с шаблоном. Как их добавить в свой редактор <a rel="noreferrer noopener" href="https://template.fls.guru/template-docs/install.html#snippets" target="_blank">описано тут</a></li><li>Файл <strong>README.txt</strong> &#8212; краткая информация по работе с шаблоном</li><li>Файл <strong>cover.jpg</strong> &#8212; обложка ЧФ</li><li>Папка <strong>config</strong> &#8212; содержит папки и файлы для настройки работы сборщиков, а также файлы с отдельными задачами. <a data-goto=".config" data-goto-header="" data-goto-top="20" href="#">подробнее..</a></li><li>Папка <strong>src</strong> &#8212; содержит исходные файлы и папки проекта. <a data-goto=".src" data-goto-header="" data-goto-top="20" href="#">подробнее&#8230;</a></li></ol>
+
+
+
+<h3 class="config">Содержимое папки config:</h3>
+
+
+
+<ol><li>Файл <strong>gulp-settings.js</strong> &#8212; содержит настройку путей к файлам и папкам для работы GULP, а также настройку FTP соединения для выгрузки результата на сервер</li><li>Файл <strong>gulp-plugins.js</strong> &#8212; вспомогательный файл, содержит подключение и экспорт списка общих плагинов для задач GULP</li><li>Файл <strong>webpack.dev.js</strong> &#8212; содержит конфигурацию работы WEBPACK в режиме разработчика</li><li>Файл <strong>webpack.prod.js</strong> &#8212; содержит конфигурацию работы WEBPACK в режиме продакшн</li><li>Папка <strong>gulp-tasks</strong> &#8212; содержит файлы отдельных задач GULP</li></ol>
+
+
+
+<h3 class="src">Содержимое папки src: </h3>
+
+
+
+<ol><li>Файл <strong>favicon.ico</strong> &#8212; иконка сайта</li><li>Файл <strong>index.html</strong> &#8212; индексная страница-содержание, она не обновляется автоматически при редактировании (при желании удалить)</li><li>Файл <strong>home.html</strong> &#8212; главная страница сайта (при желании переименовать в index.html)</li><li>Папка <strong>files</strong> (пустая) &#8212; все файлы из этой папки будут скопированы в папку с результатом (dist/files)</li><li>Папка <strong>fonts</strong> (пустая) &#8212; используется для <a rel="noreferrer noopener" href="https://template.fls.guru/template-docs/rabota-so-shriftami.html" target="_blank">подключения локальных и иконочных шрифтов</a></li><li>Папка <strong>svgicons</strong> (пустая) &#8212; используется для создания SVG спрайта</li><li>Папка <strong>html </strong>&#8212; содержит .HTM файлы, которые подключаются в HTML файлы страниц (например в home.html). Тут можно создавать свои подключаемые файлы</li><li>Папка <strong>scss</strong> &#8212; содержит файлы и папки стилей сайта</li><li>Папка <strong>js </strong>&#8212; содержит файлы и папки скриптов сайта</li><li>Папка <strong>img</strong> &#8212; тут хранятся картинки проекта. Изначально, только кавер-фото шаблона</li></ol>
+
+
+
+<h4>Содержимое папки src/html:  </h4>
+
+
+
+<p>Файлы из этой папки предназначены для подключения в HTML-файлы страниц.</p>
+
+
+
+<ol><li>Файл <strong>_header.htm</strong> &#8212; подготовка для создания шапки сайта. Содержит тег &lt;header&gt; и ограничивающий контейнер. Изначально подключен в home.html</li><li>Файл <strong>_footer.htm</strong> &#8212; подготовка для создания подвала сайта. Содержит тег &lt;footer&gt; и ограничивающий контейнер. Изначально подключен в home.html</li><li>Файл <strong>_head.htm</strong> &#8212; содержит тег &lt;head&gt; внутри которого указаны метатеги, подключена иконка сайта, файл стилей а также тег &lt;title&gt; с переменной-заголовком. Изначально подключен в home.html</li><li>Файл <strong>_js.htm</strong> &#8212; предназначен для подключения общих js-файлов. Содержит подключение основного файла js/app.min.js из результата. Изначально подключен в home.html</li><li>Файл <strong>_popup.htm</strong> &#8212; подготовка для создания попапов. Содержит шаблонный, закомментированный HTML-код. Изначально подключен в home.html. <a rel="noreferrer noopener" href="#" target="_blank">Смотри работу с попапами</a></li><li>Файл <strong>_pagging.htm</strong> &#8212; подготовка для создания блока постраничной навигации. Содержит шаблонный HTML-код.</li></ol>
+
+
+
+<h4>Содержимое папки src/scss:   </h4>
+
+
+
+<ol><li>Файл <strong>style.scss</strong> &#8212; основной файл стилей. Содержит различные настройки и подключения других файлов. <a href="https://template.fls.guru/template-docs/osnovnoj-fajl-stilej-style-scss-nastrojka-adaptivnoj-setki-i-prochee.html" target="_blank" rel="noreferrer noopener">Подробнее&#8230;</a></li><li>Файл <strong>home.scss</strong> &#8212; файл стилей главной страницы. Изначально пуст и подключен в style.scss</li><li>Файл <strong>header.scss</strong> &#8212; файл стилей шапки сайта. Содержит закомментированный код <a rel="noreferrer noopener" href="https://template.fls.guru/template-docs/menu-burger.html" target="_blank">кнопки меню-бургера</a>. Изначально подключен в style.scss</li><li>Файл <strong>footer.scss</strong> &#8212; файл стилей подвала сайта. Изначально пуст и подключен в style.scss</li><li>Файл <strong>common.scss</strong> &#8212; файл стилей для общих, переиспользуемых блоков конкретного проекта. Изначально пуст и подключен в style.scss</li><li>Файл <strong>base.scss</strong> &#8212; файл базовых стилей шаблона ЧФ. Содержит полезные SCSS-шаблоны и закомментированные подключения файлов с базовыми стилями различных модулей.</li><li>Папка <strong>libs</strong> &#8212; содержит файлы полных (заводских) стилей различных модулей и плагинов</li><li>Папка <strong>fonts</strong> &#8212; содержит файл(ы) стилей связанных со шрифтами. Содержит файл icons.scss для подключения иконочного шрифта. Также, <a rel="noreferrer noopener" href="https://template.fls.guru/template-docs/rabota-so-shriftami.html" target="_blank">в процессе подключения локальных шрифтов</a>, тут появляется файл fonts.scss</li><li>Папка <strong>base</strong> &#8212; содержит вспомогательные файлы стилей ЧФ, а также файлы с базовыми стилями различных моделей. Для удобства, файлы модулей одной группы (например элементы форм) собраны в отдельные подпапки. Тут же находится файл с обнуляющими стилями <strong>null.scss</strong></li></ol>
+
+
+
+<h4> Содержимое папки src/js:</h4>
+
+
+
+<ol><li>Файл <strong>app.js</strong> &#8212; основной файл скриптов. Служит для подключения необходимого в проекте функционала и прочих настройек.</li><li>Папка <strong>libs</strong> &#8212; содержит файлы готовых дополнений, как правило, не предусмотренных для редактирования.</li><li>Папка <strong>files</strong> &#8212; содержит файлы различных модулей и прочего функционала.</li></ol>
+
+
+
+<h5>Содержимое папки src/js/files:</h5>
+
+
+
+<ol><li>Файл <strong>script.js</strong> &#8212; предназначен для написания своего кода для проекта. Изначально импортирован в app.js</li><li>Файл <strong>functions.js</strong> &#8212; содержит мелкие модули и различный вспомогательный функционал. Изначально импортирован в app.js, но модули закомментированны</li><li>Файл <strong>gallery.js</strong> &#8212; содержит подключение плагина и стилей галереи. Изначально импортирован в app.js,  закомментированн. При необходимости, в него можно вносить изменения</li><li>Файл <strong>sliders.js</strong> &#8212; содержит подключение плагина и стилей слайдера, функционал для автоматического добавления классов, код для создания конкретных слайдеров. Изначально импортирован в app.js,  закомментированн.</li><li>Файл <strong>tippy.js</strong> &#8212; содержит подключение плагина и стилей плагина подсказок. Изначально импортирован в app.js,  закомментированн.</li><li>Файл <strong>map.js</strong> (в работе) &#8212; содержит шаблонный код для реализации функционала карт.</li><li>Файл <strong>modules.js</strong> &#8212; вспомогательный файл для работы ЧФ.</li><li>Папка <strong>forms</strong> &#8212; содержит файлы модулей для работы с формами</li><li>Папка <strong>scroll</strong> &#8212; содержит модули для работы с прокруткой сайта</li></ol>
+<div class="patreon-valid-patron-message">Этот контент вам открыт. Спасибо за поддержку канала!</div>				</div>
+			</article>
+				<div class="article__navigator navigator-article">
+			<div class="navigator-article__link navigator-article__link_prev">
+				<a href="https://template.fls.guru/template-docs/install.html" rel="prev"><- Предыдущий пост: Установка и запуск шаблона. Подготовка к работе</a> 
+			</div>
+			<div class="navigator-article__link navigator-article__link_next">
+				<a href="https://template.fls.guru/template-docs/rabota-so-shriftami.html" rel="next">Следующий пост: Работа со шрифтами. Локальные и иконочные шрифты. Подключение из Google Fonts -></a> 
+			</div>
+		</div>
+		<div class="comments" id="comments"> 		<ul class="comments__list">
+		<li id="comment-29" class="comment byuser comment-author-patreon_44122756 even thread-even depth-1 media">
+<div class="media-left"><img alt='Oleg' src='https://template.fls.guru/wp-content/uploads/2022/01/patreon_avatar_408.png' class='avatar avatar-64 photo' height='64' width='64' /></div>
+<div class="media-body"><span class="meta media-heading">Автор: Oleg
+  Добавлено 20 января, 2022 в 13:48
+</span><p>Еще бы было хорошо иметь информацию как подключать в шаблоне СТИЛИ других html страниц, из других созданных папок много-страничного сайта. </p>
+<p>Также должны ли другие страницы или папки со страницами html, быть в папке html или могут быть просто в папке src там, где главная страница? </p>
+<p>Части страниц (например  _sidebar.htm ) должны быть только в папке html или могут быть и в других папках где находятся html страницы? Спасибо Женя!</p>
+<a rel='nofollow' class='comment-reply-link' href='https://template.fls.guru/template-docs/arhitektura-shablona-fajly-i-papki.html?replytocom=29#respond' data-commentid="29" data-postid="14" data-belowelement="comment-29" data-respondelement="respond" data-replyto="Комментарий к записи Oleg" aria-label='Комментарий к записи Oleg'>Ответить</a></div>
+<ul class="children">
+<li id="comment-32" class="comment byuser comment-author-fls bypostauthor odd alt depth-2 author-comment media">
+<div class="media-left"><img alt='fls' src='https://secure.gravatar.com/avatar/5c7caa896d23644074ce4a476d9d2292?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/5c7caa896d23644074ce4a476d9d2292?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo media-object' height='64' width='64' loading='lazy'/></div>
+<div class="media-body"><span class="meta media-heading">Автор: fls
+ https://template.fls.guru Добавлено 21 января, 2022 в 08:35
+</span><p>По стилям смотри документ о файле style.scss<br />
+страницы в src части в html<br />
+структуру можно менять под свои нужды</p>
+<a rel='nofollow' class='comment-reply-link' href='https://template.fls.guru/template-docs/arhitektura-shablona-fajly-i-papki.html?replytocom=32#respond' data-commentid="32" data-postid="14" data-belowelement="comment-32" data-respondelement="respond" data-replyto="Комментарий к записи fls" aria-label='Комментарий к записи fls'>Ответить</a></div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	</ul>
+					<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Оставить комментарий <small><a rel="nofollow" id="cancel-comment-reply-link" href="/template-docs/arhitektura-shablona-fajly-i-papki.html#respond" style="display:none;">Отменить ответ</a></small></h3><form action="https://template.fls.guru/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="logged-in-as">Вы вошли как <a href="https://template.fls.guru/wp-admin/profile.php">Сергей</a>. <a href="https://template.fls.guru/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Ftemplate.fls.guru%2Ftemplate-docs%2Farhitektura-shablona-fajly-i-papki.html&amp;_wpnonce=81b6b32f17">Выйти?</a></p><div class="form-group"><label for="comment">Комментарий:</label><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" required></textarea></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="btn btn-default" value="Отправить" /> <input type='hidden' name='comment_post_ID' value='14' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	</div>	</div>
+</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<nav class="footer__menu">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="/" class="footer__link">Главная</a>
+					</li>
+				</ul>
+			</nav>
+					</div>
+	</footer>
+<script type='text/javascript' src='https://template.fls.guru/wp-content/plugins/patreon-connect/assets/js/app.js?ver=5.8.3' id='patreon-wordpress-js-js'></script>
+<script type='text/javascript' src='https://template.fls.guru/wp-includes/js/wp-embed.min.js?ver=5.8.3' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://template.fls.guru/wp-content/themes/fls/files/js/highlight.pack.js?ver=5.8.3' id='code-js'></script>
+<script type='text/javascript' src='https://template.fls.guru/wp-content/themes/fls/js/app.min.js?ver=5.8.3' id='main-js'></script>
+</div>
+</body>
+</html>

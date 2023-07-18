@@ -1,0 +1,60 @@
+//* animation display elements
+@mixin scrollAnimation($transform, $opacity, $transition) {
+	transform: $transform;
+	opacity: $opacity;
+	transition: $transition;
+	&._active {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+@mixin scrollAnimationListItem {
+		&._active {
+			li {
+				@for $var from 1 to 6 {
+					$delay: $var * 0.2;
+					&:nth-child(#{$var}) {
+						@if $var == 1 {
+							transition: transform 0.8s ease 0s;
+						} @else {
+							transition: transform 0.8s ease #{$delay + s};
+						}
+					}
+				}
+			}
+		}
+}
+
+/* //* START basic code
+.list__item{
+}
+
+.list__item li{
+	transform: translate(-120%, 0px);
+	transition: all 0.3s ease 0s;
+}
+
+.list__item._active li{
+	transform: translate(0px, 0px);
+}
+//* END Example all code
+
+//* Code without mixins
+.list__item._active li:nth-child(1){
+	transition: all 0.8s ease 0s;
+}
+.list__item._active li:nth-child(2){
+	transition: all 0.8s ease 0.2s;
+}
+.list__item._active li:nth-child(3){
+	transition: all 0.8s ease 0.4s;
+}
+.list__item._active li:nth-child(4){
+	transition: all 0.8s ease 0.6s;
+}
+.list__item._active li:nth-child(5){
+	transition: all 0.8s ease 0.8s;
+}
+
+*/

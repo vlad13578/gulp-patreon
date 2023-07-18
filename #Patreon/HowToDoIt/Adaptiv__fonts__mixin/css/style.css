@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*Обнуление*/
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: Roboto;
+	color: #fff;
+	font-size: 14px;
+	background-color: #383838;
+}
+
+.header {
+	background-color: #1b1b1b;
+	padding: 30px;
+}
+
+.content {
+	padding: 30px;
+}
+
+h1 {
+	/* font-size: 40px; */
+	font-weight: 900;
+	font-size: calc(24px + 16 * ((100vw - 320px) / 960));
+}
+
+h2 {
+	font-size: calc(18px + 12 * ((100vw - 320px) / 960));
+	font-weight: 900;
+	margin: 0px 0px 20px 0px;
+}
+
+p {
+	margin: 0px 0px 20px 0px;
+	line-height: calc(32 / 18);
+	font-size: calc(14px + 4 * ((100vw - 320px) / 960));
+}

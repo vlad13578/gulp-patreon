@@ -1,0 +1,50 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	font-family: Roboto;
+	color: #fff;
+	font-size: 14px;
+	background-color: #383838;
+}
+
+.header {
+	background-color: #1b1b1b;
+	padding: 30px;
+}
+.content {
+	padding: 30px;
+}
+
+$maxWidth: 1280;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+h1 {
+	/* font-size: 40px; */
+	font-weight: 900;
+	@include adaptiv-font(40, 24);
+}
+
+h2 {
+	@include adaptiv-font(30, 18);
+	font-weight: 900;
+	margin: 0px 0px 20px 0px;
+}
+p {
+	margin: 0px 0px 20px 0px;
+	line-height: calc(32 / 18);
+	@include adaptiv-font(18, 14);
+}

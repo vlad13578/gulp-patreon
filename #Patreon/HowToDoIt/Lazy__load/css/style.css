@@ -1,0 +1,115 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	background-color: #333;
+	color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+._loading-icon {
+	background: url("../img/loading.gif") center / 50px no-repeat;
+	height: 50px;
+}
+/* ------------------ */
+.page {
+	padding: 30px 0;
+}
+.page__container {
+	max-width: 800px;
+	margin: 0px auto;
+}
+.page__section {
+	padding: 30px;
+}
+.page__section_1 {
+	background-color: #794f45;
+}
+.page__section_2 {
+	background-color: #7a956b;
+}
+.page__section_3 {
+	background-color: #77608d;
+}
+.page__title {
+	font-size: 30px;
+	margin: 0px 0px 30px 0px;
+}
+.page__text {
+	font-size: 16px;
+	line-height: 150%;
+}
+.page__text *:last-child {
+	margin-bottom: 0;
+}
+.page__text p {
+	margin: 0px 0px 15px 0px;
+}
+.page__sub-title {
+	font-size: 24px;
+	margin: 0px 0px 30px 0px;
+}
+
+.page__images {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.page__image {
+	position: relative;
+	padding: 0px 0px 90% 0px;
+	background: url("../img/loading.gif") center / 50px no-repeat;
+}
+.page__image img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.page__map {
+	padding: 0px 0px 50% 0px;
+	position: relative;
+	background: url("../img/loading.gif") center / 50px no-repeat;
+}
+.page__map iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
